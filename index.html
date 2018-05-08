@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WOODJU</title>
+
+    <link rel="stylesheet" href="css/loader.css">
+    <link href="css/jquery.fullPage.css" type="text/css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&amp;subset=cyrillic" rel="stylesheet">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/jquery.easings.min.js"></script>
+    <script src="js/scrolloverflow.min.js"></script>
+    <script src="js/jquery.fullpage.min.js"></script>
+    <script>
+            jQuery(document).ready(function($) {
+                $(window).load(function() {
+                    setTimeout(function() {
+                        $('.loader').fadeOut('slow', function() {});
+                    }, 300);
+                });
+            });
+    </script>
+        <script>
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+		            anchors:['home', 'about', 'listen']
+	            });
+            });  
+        </script>
+
+
+</head>
+<body>
+        <!-- <audio src="woodju.mp3" autoplay="autoplay"></audio> -->
+    <div class="loader">
+        <div class='loader__demo'>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+                <div class='circle'>
+                  <div class='inner'></div>
+                </div>
+              </div>
+    </div>
+    <div class="leftline"></div>
+    <div class="overflow"></div>
+    <div class="fullscreen-bg">
+        
+            <video loop muted autoplay center poster="img/back1.jpg" class="fullscreen-bg__video">
+                <source src="img/woodju.mp4" type="video/mp4">
+            </video>
+    </div>
+    <div id="fullpage">
+        <section class="section" data-anchor="home"> 
+            <div class="firstpage">
+                <div class="firstpage__footmenu">
+                    <div class="footmenu__links">
+                        <a href="#home">ГЛАВНАЯ &#8194;</a>
+                        <a href="#about">ОБ АВТОРЕ &#8194;</a>
+                        <a href="#listen">ПОСЛУШАТЬ</a>
+                    </div>
+                    <div class="footmenu__contacts">
+                        <img src="img/vk.svg" alt="">
+                        <img src="img/instagram.svg" alt="">
+                    </div>
+                </div>
+                <div class="firstpage__centerline"></div>
+                <div class="firstpage__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="firstpage__text">
+                     UNOFFICIAL SITE
+                </div>
+            </div>
+        </section>
+    
+        <section class="section" data-anchor="about">
+            <div class="secondpage">
+                <div class="secondpage__back">
+                    <img src="img/back2.jpg" alt="">
+                </div>
+                <div class="secondpage__blackline"></div>
+                <div class="secondpage__topline"></div>
+                <div class="secondpage__toplnex"></div>
+                <div class="secondpage__text">
+                    <h1>МОЯ МУЗЫКА — МОЯ БИОГРАФИЯ </h1>
+                    <h2>WoodJu — электронный продюсер из Москвы, также известный как Ганджу Глитч, автор увесистых инструментальных прогрессий, сочетающих мощный наступательный вайб и пронзительные лиричные оттенки.</h2>
+                    <h3 onclick="sec2pageOn()">Читать дальше...</h3>
+                </div>
+                <div class="secondpage__min"></div>
+                <div class="secondpage__mid"></div>
+                <div class="secondpage__top"></div>
+                <!-- <div class="secondpage__connectline"></div>
+                <div class="secondpage__connectlineafter"></div> -->
+            </div>
+
+            <div class="sec2page">
+                <div class="sec2page__back">
+                    <img src="img/backnew.jpg" alt="">
+                </div>
+                <div class="sec2page__text">
+                        WoodJu является резидентом отечественного лейбла Abstrasension Records и фестивалей атмосферной электроники «Абстрасенция». На счету музыканта — выступления с Sorrow (UK), Vacant (UK), Sun Glitters (LUX), Arms and Sleepers (USA), Slow Magic (USA) и многими другими на главных площадках двух столиц.
+                        <p></p>
+                        Сам WoodJu предпочитает не привязываться к жанрам, его больше привлекает атмосферность и настроение, умиротворение и меланхолия. Книжный нуар, фантастика, метафорические путешествия в будущее и личные переживания — основа композиций этого столичного продюсера.
+                        <p></p>
+                        <h3 onclick="sec2pageOff()">Назад</h3>
+                    </div>
+            </div>
+        </section>
+    
+        <section class="section" data-anchor="listen">
+            <div class="trpage">
+                <div class="trpage__back">                
+                    <img src="img/back3.jpg" alt="">
+                </div>
+                <div class="trpage__topline">
+                        soundcloud.com/woodju22
+                </div>
+                <div class="trpage__midline">
+                        vk.com/glitchheart
+                </div>
+                <div class="trpage__downline">
+                        youtube.com
+                </div>
+                <div class="trpage__text">
+                    ПОСЛУШАЙ
+                </div>
+                <div class="trpage__logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+            </div>
+        </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
