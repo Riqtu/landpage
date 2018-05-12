@@ -3,6 +3,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1920px) and (min-width : 1441px){
+    .secondpage{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+    }
     .firstpage__centerline{
         width: 2000px;
     }
@@ -63,6 +68,11 @@
 }
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 1366px){
+    .secondpage{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 0px;
+    }
     .secondpage__topline{
         height: 60px;
     }
@@ -106,6 +116,12 @@
         left: 500px;
     }
 }
+@media only screen and (max-width : 1124px){
+    .footmenu__links{
+        top:30px;
+        font-size: 23pt;
+    }
+}
 /* Small Devices, Tablets */
 @media only screen and (max-width : 940px){
     .fullscreen-bg__video {
@@ -137,16 +153,19 @@
     .firstpage__createdby{
         top: calc(100% - 103px);
     }
-    .secondpage__back img{
+    /* .secondpage__back img{
         width: 113%;
         filter: brightness(0.5)
+    } */
+    .secondpage__overflow{
+        opacity: 0.3;
     }
     .secondpage__text{
         right: calc(50% - 256px);
         top: 85px;
     }
     .secondpage__blackline{
-        right: calc(50% - 146px);
+        right: calc(50% - 154px);
     }
     .sec2page__text{
         top: 125px;
@@ -160,6 +179,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 600px){
+    section{
+        min-height: 320px;
+    }
     .leftline{
         left: 10px;
     }
@@ -184,7 +206,7 @@
     }
     .footmenu__links{
         top: 23px;
-        font-size: 12pt;
+        font-size: 10.6pt;
         left: 30px;
     }
     .footmenu__contacts{
@@ -196,13 +218,13 @@
     .secondpage__text{
         top: 120px;
         width: 400px;
-        right: calc(50% - 200px);
+        right: calc(50% - 208px);
     }
     .secondpage__text h1{
-        font-size: 24pt;
+        font-size: 20pt;
     }
     .secondpage__text h2{
-        font-size: 20pt;
+        font-size: 17pt;
     }
     .secondpage__min{
         left: auto;
@@ -221,9 +243,9 @@
         left: -500px;
     }
     .sec2page__text{
-        width: 450px;
+        width: 390px;
         left: 20px;
-        font-size: 15pt;
+        font-size: 13pt;
         top: 160px;
     }
     .trpage__back img{
@@ -231,16 +253,16 @@
         left: -380px;
     }
     .trpage__topline{
-        padding-left: 30px;
-        font-size: 22pt;
+        padding-left: 20px;
+        font-size: 20pt;
     }
     .trpage__midline{
-        padding-left: 30px;
-        font-size: 22pt;
+        padding-left: 20px;
+        font-size: 20pt;
     }
     .trpage__downline{
-        padding-left: 30px;
-        font-size: 22pt;
+        padding-left: 20px;
+        font-size: 20pt;
     }
     .trpage__logo img{
         left: 25px;
@@ -250,7 +272,89 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 380px){
+    .firstpage__logo img{
+        width: 260px;
+    }
+    .firstpage__text{
+        width: 260px;
+        font-size: 22pt
+    }
+    .footmenu__links{
+        top: 23px;
+        font-size: 9pt;
+        left: 30px;
+    }
+    .sec2page__text{
+        width: 300px;
+        font-size: 12pt;
+        right: calc(50% - 178px);
+    }
+    .secondpage__text h1{
+        font-size: 20pt;
+    }
+    .secondpage__text h2{
+        width: 300px;
+        font-size: 16pt;
+        margin-left: 48px;
+    }
+    .trpage__topline{
+        padding-left: 17px;
+        font-size: 17pt;
+    }
+    .trpage__midline{
+        padding-left: 17px;
+        font-size: 17pt;
+    }
+    .trpage__downline{
+        padding-left: 17px;
+        font-size: 17pt;
+    }
+
 }
 
 @media only screen and (max-width : 320px){
+    .firstpage__logo img{
+        width: 200px;
+    }
+    .firstpage__text{
+        width: 230px;
+        font-size: 17pt
+    }
+    .footmenu__contacts{
+        top: 20px;
+    }
+    .footmenu__contacts img{
+        margin-left: 2px;
+        width: 20px;
+    }
+    .footmenu__links{
+        top: 23px;
+        font-size: 8pt;
+        left: 20px;
+    }
+    .sec2page__text{
+        width: 300px;
+        font-size: 10pt;
+        right: calc(50% - 178px);
+    }
+    .secondpage__text h1{
+        font-size: 17pt;
+    }
+    .secondpage__text h2{
+        width: 300px;
+        font-size: 14pt;
+        margin-left: 48px;
+    }
+    .trpage__topline{
+        padding-left: 17px;
+        font-size: 15pt;
+    }
+    .trpage__midline{
+        padding-left: 17px;
+        font-size: 15pt;
+    }
+    .trpage__downline{
+        padding-left: 17px;
+        font-size: 15pt;
+    }
 }
