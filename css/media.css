@@ -179,6 +179,9 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 600px){
+    .fullscreen-bg{
+        display: none;
+    }
     section{
         min-height: 320px;
     }
@@ -285,7 +288,8 @@
         left: 30px;
     }
     .sec2page__text{
-        width: 300px;
+        top:125px;
+        width: 340px;
         font-size: 12pt;
         right: calc(50% - 178px);
     }
@@ -294,7 +298,7 @@
     }
     .secondpage__text h2{
         width: 300px;
-        font-size: 16pt;
+        font-size: 14pt;
         margin-left: 48px;
     }
     .trpage__topline{
@@ -334,7 +338,7 @@
     }
     .sec2page__text{
         width: 300px;
-        font-size: 10pt;
+        font-size: 9pt;
         right: calc(50% - 178px);
     }
     .secondpage__text h1{
@@ -356,5 +360,8 @@
     .trpage__downline{
         padding-left: 17px;
         font-size: 15pt;
+    }
+    .trpage__logo{
+        display: none;
     }
 }

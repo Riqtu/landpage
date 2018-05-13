@@ -1,7 +1,9 @@
 *{
     font-family: Montserrat;
     text-decoration: none;
-    list-style-type:none
+    list-style-type:none;
+    margin:0;
+    padding: 0;
 }
 a{
     color: #000;
@@ -55,7 +57,7 @@ section{
         position: absolute;
         width: 100%;
         height: 100%;
-        background: url("../img/back1.jpg");
+        background: url("../img/back1-compressor.jpg");
         background-size: cover;
 }
 .firstpage__footmenu{
@@ -153,7 +155,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../img/back2.jpg");
+    background: url("../img/back2-compressor.jpg");
     background-size: 115%;
     background-repeat: no-repeat;
     background-position-x: -200px;
@@ -285,7 +287,7 @@ section{
     height: 100%;
     display: none;
     opacity: 0;
-    background: url("../img/backnew.jpg");
+    background: url("../img/backnew-compressor.jpg");
     background-size: cover;
 }
 .sec2page__back img{
@@ -328,7 +330,7 @@ section{
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url("../img/back3.jpg");
+    background: url("../img/back3-compressor.jpg");
     background-size: cover;
     background-position: center;
 }
